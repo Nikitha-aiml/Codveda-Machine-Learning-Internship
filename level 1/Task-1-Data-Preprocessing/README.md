@@ -2,88 +2,106 @@
 
 ## 📌 Project Overview
 
-This project is part of the **Codveda Machine Learning Internship**.
+This project is part of the **Codveda Machine Learning Internship – Level 1**. The objective of this task is to perform essential **data preprocessing techniques** to prepare a raw dataset for machine learning.
 
-The objective of this task is to preprocess a customer churn dataset and prepare it for machine learning by applying essential data preprocessing techniques such as:
-
-- Dataset exploration
-- Missing value checking
-- Feature and target separation
-- Categorical variable encoding
-- Numerical feature standardization
-- Train-test splitting
-- Data leakage prevention
+Data preprocessing is an important step in the machine learning workflow because real-world datasets may contain missing values, categorical variables, inconsistent data, and features with different scales.
 
 ---
 
-## 📊 Dataset
+## 🎯 Objectives
 
-The project uses the **Customer Churn dataset** (`churn-bigml-80.csv`).
+The main objectives of this task are:
 
-The dataset contains information about telecommunications customers and whether they have churned.
-
-### Dataset Details
-
-- **Rows:** 2,666
-- **Columns:** 20
-- **Input Features:** 19
-- **Target Variable:** `Churn`
-
-### Feature Types
-
-**Categorical Features:**
-- `State`
-- `Area code`
-- `International plan`
-- `Voice mail plan`
-
-**Numerical Features:**
-- `Account length`
-- `Number vmail messages`
-- `Total day minutes`
-- `Total day calls`
-- `Total day charge`
-- `Total eve minutes`
-- `Total eve calls`
-- `Total eve charge`
-- `Total night minutes`
-- `Total night calls`
-- `Total night charge`
-- `Total intl minutes`
-- `Total intl calls`
-- `Total intl charge`
-- `Customer service calls`
+* Load and understand the dataset
+* Explore the structure and characteristics of the data
+* Identify and handle missing values
+* Detect and handle duplicate records
+* Encode categorical variables
+* Scale numerical features
+* Prepare the processed dataset for machine learning
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Jupyter Notebook
+* **Python**
+* **Pandas** – Data manipulation and analysis
+* **NumPy** – Numerical computations
+* **Matplotlib** – Data visualization
+* **Seaborn** – Data visualization
+* **Scikit-learn** – Data preprocessing and machine learning utilities
+* **Jupyter Notebook** – Development environment
 
 ---
 
 ## 🔄 Data Preprocessing Steps
 
-### 1. Dataset Exploration
+### 1. Data Loading
 
-The dataset was loaded and examined using:
+The dataset was loaded using Pandas and inspected to understand its structure, columns, data types, and dimensions.
 
-- `head()`
-- `shape`
-- `info()`
-- `describe()`
+### 2. Exploratory Data Analysis
 
-This helped understand the dataset structure, feature types, and statistical properties.
+The dataset was examined using:
 
-### 2. Missing Value Check
+* `head()`
+* `info()`
+* `describe()`
+* Missing-value checks
+* Duplicate-value checks
+* Distribution and categorical-value analysis
 
-Missing values were checked across all columns.
+### 3. Handling Missing Values
 
-**Result:**
+Missing values were identified and handled using appropriate preprocessing techniques to ensure that the dataset could be used effectively for machine learning.
 
-```text
-Total missing values: 0
+### 4. Handling Duplicate Records
+
+Duplicate rows were checked and removed where necessary to avoid redundant observations.
+
+### 5. Encoding Categorical Variables
+
+Categorical features were converted into numerical representations using suitable encoding techniques so that machine learning algorithms could process them.
+
+### 6. Feature Scaling
+
+Numerical features were scaled to bring them to a comparable range. This helps machine learning algorithms that are sensitive to feature magnitude.
+
+### 7. Final Dataset
+
+After preprocessing, the dataset was checked again to ensure that:
+
+* Missing values were handled
+* Duplicate records were removed
+* Categorical features were encoded
+* Numerical features were appropriately scaled
+* The data was ready for further machine learning tasks
+
+---
+
+
+> **Note:** File names may vary depending on the dataset and notebook used.
+
+---
+
+## 📊 Key Outcome
+
+The raw dataset was successfully transformed into a cleaner and machine-learning-ready format through a series of preprocessing steps.
+
+This task provided practical experience in preparing real-world data before applying machine learning algorithms.
+
+---
+
+## 📚 Internship
+
+**Program:** Codveda Machine Learning Internship
+**Level:** Level 1
+**Task:** Data Preprocessing
+
+---
+
+## 👩‍💻 Author
+
+**Nikitha.S **
+
+GitHub: **Nikitha-aiml**
