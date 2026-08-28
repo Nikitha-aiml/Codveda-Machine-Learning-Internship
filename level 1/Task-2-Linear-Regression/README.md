@@ -2,134 +2,119 @@
 
 ## 📌 Project Overview
 
-This project is part of the **Codveda Machine Learning Internship**.
+This project is part of the **Codveda Machine Learning Internship – Level 1**. The objective of this task is to implement a **Linear Regression** model to predict a continuous target variable using one or more input features.
 
-The objective of this task is to build a **Simple Linear Regression model** using the Boston Housing dataset to predict the median value of owner-occupied homes based on the average number of rooms per dwelling.
-
-The project covers:
-
-- Loading and exploring the dataset
-- Selecting the feature and target variable
-- Splitting the dataset into training and testing sets
-- Building a Linear Regression model
-- Interpreting model coefficients
-- Evaluating model performance
-- Visualizing actual and predicted values
-- Visualizing the regression line
+Linear Regression is a supervised machine learning algorithm that models the relationship between independent variables and a continuous dependent variable.
 
 ---
 
-## 📊 Dataset
+## 🎯 Objectives
 
-The project uses the **Boston Housing dataset**.
+The main objectives of this task are:
 
-For this project, **RM (average number of rooms per dwelling)** is used as the independent variable, while **MEDV (median value of owner-occupied homes)** is used as the target variable.
-
-### Features Used
-
-- **RM** – Average number of rooms per dwelling
-- **MEDV** – Median value of owner-occupied homes
+* Load and explore the dataset
+* Perform necessary data preprocessing
+* Select the input features and target variable
+* Split the dataset into training and testing sets
+* Train a Linear Regression model
+* Make predictions on the test data
+* Evaluate the model's performance
+* Visualize the relationship between actual and predicted values
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-learn
-- Jupyter Notebook
+* **Python**
+* **Pandas** – Data manipulation and analysis
+* **NumPy** – Numerical computations
+* **Matplotlib** – Data visualization
+* **Seaborn** – Statistical visualization
+* **Scikit-learn** – Machine learning and model evaluation
+* **Jupyter Notebook** – Development environment
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 Workflow
 
-### 1. Dataset Loading and Exploration
+### 1. Data Loading
 
-The dataset was loaded and examined using:
+The dataset was loaded using Pandas and examined to understand its structure, features, data types, and target variable.
 
-- `head()`
-- `shape`
-- `info()`
-- `describe()`
+### 2. Data Exploration
 
-These steps were used to understand the structure and statistical characteristics of the dataset.
+Exploratory data analysis was performed to understand:
 
-### 2. Data Analysis
+* Dataset dimensions
+* Feature distributions
+* Data types
+* Missing values
+* Relationships between variables
 
-The relationship between the number of rooms (`RM`) and median house value (`MEDV`) was explored using correlation analysis and visualization.
+### 3. Data Preprocessing
 
-A scatter plot was created to observe the relationship between the two variables.
+The required preprocessing steps were performed to prepare the dataset for model training.
 
-### 3. Feature and Target Selection
+### 4. Feature and Target Selection
 
-For this Simple Linear Regression model:
+The independent variables were selected as input features (`X`), while the continuous variable to be predicted was selected as the target (`y`).
 
-X = df[["RM"]]
-y = df["MEDV"]
+### 5. Train-Test Split
 
-RM is the independent variable.
-MEDV is the dependent/target variable.
+The dataset was divided into training and testing sets. The training data was used to build the model, while the test data was used to evaluate its performance on unseen data.
 
-### 4. Train-Test Split
+### 6. Model Training
 
-The dataset was divided into training and testing sets using an 80:20 ratio.
-Training data: 80%
-Testing data: 20%
-A fixed random_state was used to make the results reproducible.
+A **Linear Regression** model from Scikit-learn was trained using the training dataset.
 
-### 5. Model Building
+### 7. Prediction
 
-A Linear Regression model from Scikit-learn was trained using the training data.
-The fitted model produced the following regression equation:
-MEDV = -36.2463 + 9.3483 × RM
-The positive coefficient indicates that an increase in the average number of rooms is associated with an increase in the predicted median house value.
+The trained model was used to predict target values for the test dataset.
 
-### 6. Model Prediction
+### 8. Model Evaluation
 
-The trained model was used to predict house values for the test dataset.
+The model was evaluated using appropriate regression metrics, including:
 
-### 7. Model Evaluation
+* **Mean Squared Error (MSE)**
+* **R² Score**
 
-The model was evaluated using:
-Mean Squared Error (MSE)
-R-squared (R²)
-Results
-Mean Squared Error (MSE): 46.1448
-R-squared (R²): 0.3708
-Interpretation
-The R² score of approximately 0.3708 indicates that the average number of rooms (RM) alone explains about 37.1% of the variation in median house values.
-This also indicates that other housing and socioeconomic factors influence house prices and are not captured by this simple one-feature model.
+### 9. Visualization
 
-### 📈 Visualizations
+Visualizations were created to compare the actual target values with the values predicted by the Linear Regression model.
 
-The project includes the following visualizations:
-1. RM vs MEDV Scatter Plot
-Shows the relationship between the average number of rooms and median house value.
-2. Actual vs Predicted Values
-Compares the actual house values with the values predicted by the Linear Regression model.
-3. Regression Line
-Shows the fitted linear regression line between RM and MEDV.
+---
 
-### 🔍 Key Observations
-There is a positive relationship between the average number of rooms and median house value.
-The regression coefficient for RM is positive.
-An increase in the average number of rooms is associated with an increase in predicted house value.
-The R² score of 0.3708 shows that RM alone does not fully explain house-price variation.
-Other factors are likely required to build a more accurate house-price prediction model.
+## 📈 Model Evaluation
+
+The performance of the Linear Regression model was evaluated using:
+
+### Mean Squared Error (MSE)
+
+MSE measures the average squared difference between the actual and predicted values. A lower MSE indicates better prediction performance.
+
+### R² Score
+
+R² indicates how well the model explains the variation in the target variable. A value closer to **1** generally indicates a better fit.
+
+---
 
 
-### Conclusion
+## 📊 Key Outcome
 
-A Simple Linear Regression model was successfully developed to predict median house values using the average number of rooms per dwelling.
-The model achieved an MSE of 46.1448 and an R² score of 0.3708.
-While RM has a positive relationship with house prices, using a single feature limits the predictive capability of the model. Additional housing and socioeconomic features could be incorporated in future models to improve prediction performance.
+A Linear Regression model was successfully developed to predict the continuous target variable. The model was trained, tested, evaluated using regression metrics, and visualized to understand its prediction performance.
 
-### 👩‍💻 Internship
+---
 
-Codveda Technologies – Machine Learning Internship
+## 📚 Internship Details
 
-Task: Linear Regression
+**Program:** Codveda Machine Learning Internship
+**Level:** Level 1
+**Task:** Linear Regression
 
-Level: Level 1
+---
+
+## 👩‍💻 Author
+
+**Nikitha.S**
+
+GitHub: **Nikitha-aiml**
