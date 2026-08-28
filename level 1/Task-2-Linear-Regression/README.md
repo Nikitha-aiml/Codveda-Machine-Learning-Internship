@@ -119,12 +119,6 @@ An increase in the average number of rooms is associated with an increase in pre
 The R² score of 0.3708 shows that RM alone does not fully explain house-price variation.
 Other factors are likely required to build a more accurate house-price prediction model.
 
-### 📁 Project Structure
-Task-2-Linear-Regression/
-│
-├── Linear_Regression.ipynb
-├── housing.csv
-└── README.md
 
 ### Conclusion
 
