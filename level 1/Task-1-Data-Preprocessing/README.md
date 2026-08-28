@@ -79,11 +79,6 @@ After preprocessing, the dataset was checked again to ensure that:
 
 ---
 
-
-> **Note:** File names may vary depending on the dataset and notebook used.
-
----
-
 ## 📊 Key Outcome
 
 The raw dataset was successfully transformed into a cleaner and machine-learning-ready format through a series of preprocessing steps.
