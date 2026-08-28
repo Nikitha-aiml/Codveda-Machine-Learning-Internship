@@ -1,163 +1,141 @@
-# Level 3 - Task 1: Random Forest Classifier
+# Random Forest Classifier – Codveda Machine Learning Internship
 
 ## 📌 Project Overview
 
-This project is part of my **Codveda Machine Learning Internship - Level 3 (Advanced)**.
+This project is part of the **Codveda Machine Learning Internship – Level 1**. The objective of this task is to implement a **Random Forest Classifier** for solving a supervised classification problem.
 
-The objective of this task is to build a **Random Forest Classifier** to predict customer churn using a customer churn dataset.
-
-The project covers data preprocessing, model training, hyperparameter tuning, cross-validation, classification evaluation, and feature importance analysis.
+Random Forest is an ensemble machine learning algorithm that combines multiple decision trees to improve prediction accuracy and reduce overfitting.
 
 ---
 
 ## 🎯 Objectives
 
-- Explore and understand the customer churn dataset.
-- Preprocess numerical and categorical features.
-- Build a Random Forest classification model.
-- Evaluate the model using classification metrics.
-- Perform cross-validation.
-- Tune Random Forest hyperparameters using GridSearchCV.
-- Compare the initial and tuned models.
-- Analyze feature importance.
-- Identify the factors that contribute most to customer churn.
+The main objectives of this task are:
 
----
-
-## 📂 Dataset
-
-**Dataset:** `churn-bigml-80.csv`
-
-The dataset contains **2,666 customer records and 20 columns**.
-
-### Target Variable
-
-- `Churn` - Indicates whether a customer has churned (`True`) or not (`False`).
-
-### Main Features
-
-- State
-- Account length
-- Area code
-- International plan
-- Voice mail plan
-- Number of voicemail messages
-- Total day minutes
-- Total day calls
-- Total day charge
-- Total evening minutes
-- Total evening calls
-- Total evening charge
-- Total night minutes
-- Total night calls
-- Total night charge
-- Total international minutes
-- Total international calls
-- Total international charge
-- Customer service calls
+* Load and explore the dataset
+* Perform data preprocessing
+* Select features and the target variable
+* Split the dataset into training and testing sets
+* Train a Random Forest Classification model
+* Evaluate the model using classification metrics
+* Perform cross-validation
+* Analyze the model's performance
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Jupyter Notebook
+* **Python**
+* **Pandas** – Data manipulation and analysis
+* **NumPy** – Numerical computations
+* **Matplotlib** – Data visualization
+* **Seaborn** – Statistical visualization
+* **Scikit-learn** – Machine learning and evaluation
+* **Jupyter Notebook** – Development environment
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 Workflow
 
 ### 1. Data Loading
 
-The customer churn dataset was loaded using Pandas and inspected to understand its structure, data types, and dimensions.
+The dataset was loaded using Pandas and inspected to understand its structure, features, data types, and target variable.
 
 ### 2. Data Exploration
 
-The dataset was analyzed using:
+Exploratory analysis was performed to examine:
 
-- Dataset shape
-- Column names
-- Data types
-- Statistical summary
-- Missing-value analysis
-- Churn distribution
+* Dataset dimensions
+* Data types
+* Missing values
+* Class distribution
+* Feature characteristics
 
 ### 3. Data Preprocessing
 
-Categorical features were encoded using **One-Hot Encoding**.
+The necessary preprocessing steps were performed to prepare the dataset for machine learning.
 
-The categorical features included:
+### 4. Feature and Target Selection
 
-- State
-- Area code
-- International plan
-- Voice mail plan
+The independent variables were selected as the input features (`X`), while the categorical variable to be predicted was selected as the target (`y`).
 
-The dataset was then divided into training and testing sets using an **80:20 stratified split**.
+### 5. Train-Test Split
 
-### 4. Random Forest Classification
+The dataset was divided into training and testing sets. The training data was used to train the model, while the testing data was used to evaluate its performance on unseen data.
 
-A `RandomForestClassifier` was trained to predict customer churn.
+### 6. Random Forest Model
 
-### 5. Model Evaluation
+A **Random Forest Classifier** was trained using multiple decision trees. The ensemble approach helps improve generalization and provides more robust predictions than a single decision tree.
 
-The model was evaluated using:
+### 7. Model Evaluation
 
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- Confusion Matrix
-- Classification Report
+The trained model was evaluated using:
 
-### 6. Cross-Validation
+* **Accuracy**
+* **Precision**
+* **Recall**
+* **F1 Score**
+* **Confusion Matrix**
 
-Five-fold cross-validation was performed using the F1-score to evaluate the consistency of the model.
+### 8. Cross-Validation
 
-### 7. Hyperparameter Tuning
-
-`GridSearchCV` was used to tune the Random Forest parameters.
-
-The parameters considered included:
-
-- `n_estimators`
-- `max_depth`
-- `min_samples_split`
-- `min_samples_leaf`
-
-### 8. Feature Importance
-
-Feature importance was analyzed to identify the variables that had the greatest influence on the model's predictions.
+Cross-validation was performed to assess the model's performance across multiple subsets of the dataset and obtain a more reliable estimate of its generalization performance.
 
 ---
 
-## 📊 Model Performance
+## 📊 Model Evaluation
 
-### Initial Random Forest
+The Random Forest model was evaluated using standard classification metrics.
 
-| Metric | Score |
-|---|---:|
-| Accuracy | 94.38% |
-| Precision | 100.00% |
-| Recall | 61.54% |
-| F1-score | 76.19% |
+### Accuracy
 
-### Cross-Validation
+Measures the proportion of correctly classified observations out of all observations.
 
-| Metric | Score |
-|---|---:|
-| Mean F1-score | 75.64% |
-| Standard Deviation | 3.10% |
+### Precision
 
-The five-fold cross-validation F1-scores were:
+Measures how many of the observations predicted as positive actually belong to the positive class.
 
-```text
-0.8000
-0.7097
-0.7786
-0.7520
-0.7419
+### Recall
+
+Measures how many of the actual positive observations were correctly identified by the model.
+
+### F1 Score
+
+The F1 score is the harmonic mean of precision and recall and provides a balanced measure when both metrics are important.
+
+### Confusion Matrix
+
+The confusion matrix provides a detailed view of correct and incorrect predictions for each class.
+
+---
+
+## 🔁 Cross-Validation
+
+K-Fold Cross-Validation was used to evaluate the consistency of the Random Forest model.
+
+The dataset was divided into multiple folds, with the model trained and evaluated multiple times using different training and validation subsets.
+
+The **mean cross-validation F1 score** was used as an additional measure of model performance.
+
+---
+
+
+## 📈 Key Outcome
+
+A **Random Forest Classifier** was successfully implemented for the classification task. The model was trained and evaluated using multiple performance metrics, followed by cross-validation to assess its reliability and generalization ability.
+
+---
+
+## 📚 Internship Details
+
+**Program:** Codveda Machine Learning Internship
+**Level:** Level 3
+**Task:** Random Forest Classification
+
+---
+
+## 👩‍💻 Author
+
+**Nikitha.S**
+
+GitHub: **Nikitha-aiml**
