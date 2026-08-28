@@ -68,7 +68,8 @@ For this Simple Linear Regression model:
 
 ```python
 X = df[["RM"]]
-y = df["MEDV"]
+y = df["MEDV"]```
+
 RM is the independent variable.
 MEDV is the dependent/target variable.
 
