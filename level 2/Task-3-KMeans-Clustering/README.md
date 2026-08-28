@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project is part of the **Codveda Machine Learning Internship – Level 1**. The objective of this task is to implement **K-Means Clustering**, an unsupervised machine learning algorithm used to group similar data points into clusters.
+This project is part of the **Codveda Machine Learning Internship – Level 2**. The objective of this task is to implement **K-Means Clustering**, an unsupervised machine learning algorithm used to group similar data points into clusters.
 
 The project explores different values of **K** and uses the **Silhouette Score** to evaluate the quality of the resulting clusters and determine a suitable number of clusters.
 
