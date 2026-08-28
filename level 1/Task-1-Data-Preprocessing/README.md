@@ -1,41 +1,89 @@
-# Data Preprocessing for Machine Learning
+# Data Preprocessing – Codveda Machine Learning Internship
 
-## Project Overview
-This project demonstrates the essential data preprocessing steps required before training a machine learning model. The Churn Prediction dataset was used to clean, transform, and prepare the data for analysis.
+## 📌 Project Overview
 
-## Objectives
-- Handle missing values
-- Check for duplicate records
-- Encode categorical variables
-- Standardize numerical features
-- Split the dataset into training and testing sets
-- Save the processed dataset
+This project is part of the **Codveda Machine Learning Internship**.
 
-## Dataset
-- Dataset: Churn Prediction Dataset
-- Records: 2666
-- Features: 20
+The objective of this task is to preprocess a customer churn dataset and prepare it for machine learning by applying essential data preprocessing techniques such as:
 
-## Tools & Libraries
+- Dataset exploration
+- Missing value checking
+- Feature and target separation
+- Categorical variable encoding
+- Numerical feature standardization
+- Train-test splitting
+- Data leakage prevention
+
+---
+
+## 📊 Dataset
+
+The project uses the **Customer Churn dataset** (`churn-bigml-80.csv`).
+
+The dataset contains information about telecommunications customers and whether they have churned.
+
+### Dataset Details
+
+- **Rows:** 2,666
+- **Columns:** 20
+- **Input Features:** 19
+- **Target Variable:** `Churn`
+
+### Feature Types
+
+**Categorical Features:**
+- `State`
+- `Area code`
+- `International plan`
+- `Voice mail plan`
+
+**Numerical Features:**
+- `Account length`
+- `Number vmail messages`
+- `Total day minutes`
+- `Total day calls`
+- `Total day charge`
+- `Total eve minutes`
+- `Total eve calls`
+- `Total eve charge`
+- `Total night minutes`
+- `Total night calls`
+- `Total night charge`
+- `Total intl minutes`
+- `Total intl calls`
+- `Total intl charge`
+- `Customer service calls`
+
+---
+
+## 🛠️ Technologies Used
+
 - Python
 - Pandas
 - NumPy
 - Scikit-learn
+- Jupyter Notebook
 
-## Preprocessing Steps
-1. Loaded the dataset
-2. Explored dataset structure
-3. Checked missing values
-4. Checked duplicate records
-5. Encoded categorical variables using Label Encoding
-6. Standardized numerical features using StandardScaler
-7. Split the dataset into training and testing sets
-8. Saved the processed dataset
+---
 
-## Files Included
-- Data_Preprocessing.ipynb
-- churn-bigml-80.csv
-- Processed_Churn_Data.csv
+## 🔄 Data Preprocessing Steps
 
-## Conclusion
-The dataset has been successfully preprocessed and is ready for building machine learning models.
+### 1. Dataset Exploration
+
+The dataset was loaded and examined using:
+
+- `head()`
+- `shape`
+- `info()`
+- `describe()`
+
+This helped understand the dataset structure, feature types, and statistical properties.
+
+### 2. Missing Value Check
+
+Missing values were checked across all columns.
+
+**Result:**
+
+```text
+Total missing values: 0
