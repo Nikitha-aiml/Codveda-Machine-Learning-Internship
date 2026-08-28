@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project is part of the **Codveda Machine Learning Internship – Level 1**. The objective of this task is to implement a **Random Forest Classifier** for solving a supervised classification problem.
+This project is part of the **Codveda Machine Learning Internship – Level 3**. The objective of this task is to implement a **Random Forest Classifier** for solving a supervised classification problem.
 
 Random Forest is an ensemble machine learning algorithm that combines multiple decision trees to improve prediction accuracy and reduce overfitting.
 
