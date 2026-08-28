@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project is part of the **Codveda Machine Learning Internship – Level 1**. The objective of this task is to implement **Support Vector Machine (SVM)** models for a supervised classification problem.
+This project is part of the **Codveda Machine Learning Internship – Level 3**. The objective of this task is to implement **Support Vector Machine (SVM)** models for a supervised classification problem.
 
 Support Vector Machine is a powerful supervised learning algorithm that finds an optimal decision boundary to separate different classes. In this project, both **Linear SVM** and **RBF (Radial Basis Function) SVM** models are implemented and evaluated.
 
