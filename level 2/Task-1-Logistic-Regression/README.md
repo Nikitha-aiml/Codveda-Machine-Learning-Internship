@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project is part of the **Codveda Machine Learning Internship – Level 1**. The objective of this task is to implement **Logistic Regression** for a supervised classification problem.
+This project is part of the **Codveda Machine Learning Internship – Level 2**. The objective of this task is to implement **Logistic Regression** for a supervised classification problem.
 
 Logistic Regression is a classification algorithm that estimates the probability of an observation belonging to a particular class. It is commonly used for binary classification problems.
 
